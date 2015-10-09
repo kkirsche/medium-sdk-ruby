@@ -6,8 +6,7 @@ module Medium
     def initialize(auth_creds)
       @client = Hurley::Client.new 'https://api.medium.com/v1/'
       @client.connection = Hurley::HttpCache.new
-
-      @user_auth = { token: auth_creds[:integration_token] }
+      @client.header[:Authorization] = "Bearer #{auth_creds[:integration_token]}"
     end
 
     def users
