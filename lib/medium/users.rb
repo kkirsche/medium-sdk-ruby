@@ -8,10 +8,16 @@ module Medium
 
     def me
       response = @client.get 'me'
+      validate response
+    end
+
+    private
+
+    def validate(response)
       if response.success?
         JSON.parse response.body
       else
-        response
+        fail "Failed with #{response.status_type} error from server"
       end
     end
   end
