@@ -20,11 +20,11 @@ module Medium
     #   Content-Type: application/json; charset=utf-8
     #   {
     #     "data": {
-    #       "id": "5303d74c64f66366f00cb9b2a94f3251bf5",
-    #       "username": "majelbstoat",
-    #       "name": "Jamie Talbot",
-    #       "url": "https://medium.com/@majelbstoat",
-    #       "imageUrl": "https://images.medium.com/0*fkfQiTzT7TlUGGyI.png"
+    #       "id": "123456789exampleid",
+    #       "username": "kkirsche",
+    #       "name": "Kevin Kirsche",
+    #       "url": "https://medium.com/@kkirsche",
+    #       "imageUrl": "https://images.medium.com/somewhere.png"
     #     }
     #   }
     #   ```
