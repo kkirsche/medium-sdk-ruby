@@ -29,7 +29,7 @@ module MediumSpec
     it 'should initialize the correct type of client object' do
       auth = { integration_token: 'test' }
       client = Medium::Client.new auth
-      expect(client.users.me).must_equal 'Failed with client_error error from server. Received error: token was invalid.'
+      expect(proc { client.users.me }).must_raise RuntimeError
     end
   end
 end
