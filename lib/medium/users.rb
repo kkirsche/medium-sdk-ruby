@@ -17,7 +17,7 @@ module Medium
       if response.success?
         JSON.parse response.body
       else
-        fail "Failed with #{response.status_type} error from server"
+        fail "Failed with #{response.status_type} error from server. Received error #{response.status_code}."
       end
     end
   end
