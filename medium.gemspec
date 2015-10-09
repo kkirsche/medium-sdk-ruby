@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Medium::VERSION
   spec.authors       = ['Kevin Kirsche']
   spec.email         = ['kev.kirsche@gmail.com']
+  spec.licenses      = ['Apache-2.0']
 
   spec.summary       = 'Ruby SDK for interacting with the Medium API'
   spec.description   = 'Ruby SDK for interacting with the Medium API'
