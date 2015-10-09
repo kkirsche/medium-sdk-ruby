@@ -14,10 +14,11 @@ module Medium
     private
 
     def validate(response)
+      response_body = JSON.parse response.body
       if response.success?
-        JSON.parse response.body
+        response_body
       else
-        fail "Failed with #{response.status_type} error from server. Received error #{response.status_code}."
+        fail "Failed with #{response.status_type} error from server. Received error: #{response_body['errors'][0]['message']}"
       end
     end
   end
