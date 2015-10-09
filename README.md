@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/coverage)
+[![Build Status](https://travis-ci.org/kkirsche/medium-sdk-ruby.svg)](https://travis-ci.org/kkirsche/medium-sdk-ruby) [![Code Climate](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/coverage)
 
 # Medium SDK for Ruby
 
