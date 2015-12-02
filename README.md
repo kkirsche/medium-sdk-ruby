@@ -18,20 +18,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install medium
+    $ gem install medium-sdk-ruby
 
 ## Usage
 
 Create a client, then call commands on it.
 
 ```ruby
-require 'medium'
+require 'medium-sdk-ruby'
 
 # If you have a self-issued access token, you can create a new client directly:
 client = Medium::Client.new integration_token: 'example_token'
 
 # Get profile details of the user identified by the access token.
-client.user.me
+client.users.me
 ```
 
 ## Development
