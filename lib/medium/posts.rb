@@ -30,8 +30,8 @@ module Medium
     #     }
     #   }
     #   ```
-    def create(opts)
-      @client.post "users/#{@client.users.me['data']['id']}/posts",
+    def create(user, opts)
+      @client.post "users/#{user['data']['id']}/posts",
                    build_request_with(opts)
     end
 
