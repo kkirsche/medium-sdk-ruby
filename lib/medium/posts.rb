@@ -53,7 +53,9 @@ module Medium
         hash[:tags] = opts[:tags] if opts.key? :tags
         hash[:canonicalUrl] = opts[:canonical_url] if opts.key? :canonical_url
         hash[:publishStatus] = opts[:publish_status] if opts.key? :publish_status
+        hash[:publishedAt] = opts[:published_at] if opts.key? :published_at
         hash[:license] = opts[:license] if opts.key? :license
+        hash[:notifyFollowers] = opts[:notify_followers] if opts.key? :notify_followers
       end
     end
   end
