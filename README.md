@@ -9,7 +9,7 @@ This repository contains the open source SDK for integrating Medium's API into y
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'medium'
+gem 'medium-sdk-ruby'
 ```
 
 And then execute:
@@ -25,7 +25,7 @@ Or install it yourself as:
 Create a client, then call commands on it.
 
 ```ruby
-require 'medium-sdk-ruby'
+require 'medium'
 
 # If you have a self-issued access token, you can create a new client directly:
 client = Medium::Client.new integration_token: 'example_token'
