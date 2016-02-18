@@ -1,0 +1,19 @@
+Metrics/BlockNesting:
+  Max: 2
+
+Metrics/LineLength:
+  Max: 80
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 10
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
