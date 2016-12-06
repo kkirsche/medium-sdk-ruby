@@ -35,8 +35,6 @@ module Medium
 
     # Returns an array of a user's publications.
     #
-    # @param user [User] A user object.
-    #
     # @return [Array] The response is an array of Publication objects within a data envelope.
     #   Example response:
     #   ```
@@ -52,8 +50,8 @@ module Medium
     #     }
     #   }
     #   ```
-    def publications(user)
-      response = @client.get "users/#{user['data']['id']}/publications"
+    def publications()
+      response = @client.get "users/#{me['data']['id']}/publications"
       Medium::Client.validate response
     end
   end
