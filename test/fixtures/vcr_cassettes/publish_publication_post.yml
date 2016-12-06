@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.medium.com/v1/publications/a3ed2f08643/posts
+    body:
+      encoding: ASCII-8BIT
+      string: title=Test%20Title&contentFormat=html&content=%3Ch1%3ETitle%3C%2Fh1%3E%3Cp%3EThis%20is%20a%20test%3C%2Fp%3E&tags%5B%5D=Testing&publishStatus=draft
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Authorization:
+      - Bearer 2688e127fa3308721eca3ed4d157acefc851705b87e1b7706c4a42bed752be856
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '146'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 06 Dec 2016 17:12:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '341'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2da7dbb62e90024c6ef593b0f3e5b9181481044330; expires=Wed, 06-Dec-17
+        17:12:10 GMT; path=/; domain=.medium.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Obvious-Info:
+      - 26511-25f9fb7,f18d8a7
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      X-Powered-By:
+      - Medium
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Pragma:
+      - no-cache
+      Tk:
+      - T
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"0c01ff4f73eb4a44","ot-tracer-traceid":"1b964a0b13f377fc","ot-tracer-sampled":"true"}'
+      Location:
+      - https://medium.com/@jvanderhoof/727b71df8217
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 30d15c785b73501d-DEN
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"727b71df8217","title":"Test Title","authorId":"1f333db49fd61858ff96c2a0676298b1d2fa44f30ad40509b09245d2c1fcf298b","url":"https://medium.com/@kkirsche/727b71df8212","canonicalUrl":"","publishStatus":"draft","license":"","licenseUrl":"https://medium.com/policy/9db0094a1e0f","tags":["testing"],"publicationId":"a3ed2f08643"}}'
+    http_version:
+  recorded_at: Tue, 06 Dec 2016 17:12:11 GMT
+recorded_with: VCR 3.0.3
