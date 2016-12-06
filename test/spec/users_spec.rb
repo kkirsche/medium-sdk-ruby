@@ -23,15 +23,29 @@ module MediumSpec
           'imageUrl' => 'https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png'
         }
       }
-      VCR.use_cassette("current_user") do
+      VCR.use_cassette('current_user') do
         expect(@users_client.me).must_equal response
+      end
+    end
+
+    it 'should return a list of a user\'s publications' do
+      response = {
+        'data'=> [{
+          'id'=>'a3ed2f08643',
+          'name'=>'Awesome Publication',
+          'description'=>'The single best publication on Medium.',
+          'url'=>'https://medium.com/awesome-publication',
+          'imageUrl'=>'https://cdn-images-1.medium.com/fit/c/200/200/my-image.jpeg'}]
+      }
+      VCR.use_cassette('user_publications') do
+        expect(@users_client.publications).must_equal response
       end
     end
 
     it 'should return a runtime error when it has an invalid authorization token' do
       auth = { integration_token: 'test' }
       client = Medium::Client.new auth
-      VCR.use_cassette("integration_token") do
+      VCR.use_cassette('integration_token') do
         expect(proc { client.users.me }).must_raise RuntimeError
       end
     end

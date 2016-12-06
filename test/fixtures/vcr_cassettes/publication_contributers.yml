@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.medium.com/v1/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Authorization:
+      - Bearer 2688e127fa3308721eca3ed4d157acefc851705b87e1b7706c4a42bed752be856
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Dec 2016 14:20:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df1efb4ffd7a65dc24cca2fa6a8474a011481034017; expires=Wed, 06-Dec-17
+        14:20:17 GMT; path=/; domain=.medium.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Obvious-Info:
+      - 26511-25f9fb7,f18d8a7
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      X-Powered-By:
+      - Medium
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Pragma:
+      - no-cache
+      Tk:
+      - T
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"10cc914f33990cf7","ot-tracer-traceid":"6a7358934333bf82","ot-tracer-sampled":"true"}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 30d060afabe34ff9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1008821ef02b8f33ad7b7c8c8c0a3153d2f954e292771b61c4769522a5097eaac","username":"kkirsche","name":"Kevin
+        Kirsche","url":"https://medium.com/@kkirsche","imageUrl":"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png"}}'
+    http_version:
+  recorded_at: Tue, 06 Dec 2016 14:20:17 GMT
+- request:
+    method: get
+    uri: https://api.medium.com/v1/users/1008821ef02b8f33ad7b7c8c8c0a3153d2f954e292771b61c4769522a5097eaac/publications
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Authorization:
+      - Bearer 2688e127fa3308721eca3ed4d157acefc851705b87e1b7706c4a42bed752be856
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Dec 2016 14:20:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8bf3dbb9c7dafab2afacc578d1502ba21481034017; expires=Wed, 06-Dec-17
+        14:20:17 GMT; path=/; domain=.medium.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Obvious-Info:
+      - 26511-25f9fb7,f18d8a7
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      X-Powered-By:
+      - Medium
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Pragma:
+      - no-cache
+      Tk:
+      - T
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"262785c82d625c49","ot-tracer-traceid":"626e61e16f51354f","ot-tracer-sampled":"true"}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 30d060b319844fe1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"a3ed2f08643","name":"Awesome Publication","description":"The
+        single best publication on Medium.","url":"https://medium.com/awesome-publication",
+        "imageUrl":"https://cdn-images-1.medium.com/fit/c/200/200/my-image.jpeg"}]}'
+    http_version:
+  recorded_at: Tue, 06 Dec 2016 14:20:18 GMT
+- request:
+    method: get
+    uri: https://api.medium.com/v1/publications/a3ed2f08643/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Authorization:
+      - Bearer 2688e127fa3308721eca3ed4d157acefc851705b87e1b7706c4a42bed752be856
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Dec 2016 14:20:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d95ea6492720e68ea766c0062e7fd07441481034018; expires=Wed, 06-Dec-17
+        14:20:18 GMT; path=/; domain=.medium.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Obvious-Info:
+      - 26511-25f9fb7,f18d8a7
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      X-Powered-By:
+      - Medium
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Pragma:
+      - no-cache
+      Tk:
+      - T
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"01e01e374749804d","ot-tracer-traceid":"3114247430af7848","ot-tracer-sampled":"true"}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 30d060b66be75029-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"publicationId":"a3ed2f08643","userId":"1008821ef02b8f33ad7b7c8c8c0a3153d2f954e292771b61c4769522a5097eaac","role":"editor"}]}'
+    http_version:
+  recorded_at: Tue, 06 Dec 2016 14:20:18 GMT
+recorded_with: VCR 3.0.3
