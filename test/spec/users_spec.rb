@@ -23,13 +23,17 @@ module MediumSpec
           'imageUrl' => 'https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png'
         }
       }
-      expect(@users_client.me).must_equal response
+      VCR.use_cassette("current_user") do
+        expect(@users_client.me).must_equal response
+      end
     end
 
     it 'should return a runtime error when it has an invalid authorization token' do
       auth = { integration_token: 'test' }
       client = Medium::Client.new auth
-      expect(proc { client.users.me }).must_raise RuntimeError
+      VCR.use_cassette("integration_token") do
+        expect(proc { client.users.me }).must_raise RuntimeError
+      end
     end
   end
 end
