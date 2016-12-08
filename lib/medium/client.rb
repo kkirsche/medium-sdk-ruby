@@ -34,6 +34,13 @@ module Medium
       @posts ||= Medium::Posts.new @client
     end
 
+    # Create a publications resource sub-client if necessary.
+    #
+    # @return [Medium::publications] Medium Publications resource sub-client
+    def publications
+      @posts ||= Medium::Publications.new @client
+    end
+
     private
 
     # Add authorization headers to the Hurley client. This allows us to

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.medium.com/v1/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Authorization:
+      - Bearer test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 06 Dec 2016 13:45:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddbccf9bf7b2dc413045fae16a2876f9d1481031945; expires=Wed, 06-Dec-17
+        13:45:45 GMT; path=/; domain=.medium.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Obvious-Info:
+      - 26511-25f9fb7,f18d8a7
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      X-Powered-By:
+      - Medium
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Pragma:
+      - no-cache
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"0e4952ca36515c0c","ot-tracer-traceid":"10d923006939611f","ot-tracer-sampled":"true"}'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 30d02e1adc58501d-DEN
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Token was invalid.","code":6003}]}'
+    http_version: 
+  recorded_at: Tue, 06 Dec 2016 13:45:45 GMT
+recorded_with: VCR 3.0.3

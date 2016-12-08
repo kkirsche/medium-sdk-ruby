@@ -32,5 +32,27 @@ module Medium
       response = @client.get 'me'
       Medium::Client.validate response
     end
+
+    # Returns an array of a user's publications.
+    #
+    # @return [Array] The response is an array of Publication objects within a data envelope.
+    #   Example response:
+    #   ```
+    #   HTTP/1.1 200 OK
+    #   Content-Type: application/json; charset=utf-8
+    #   {
+    #     "data": {
+    #       "id": "123456789exampleid",
+    #       "name": "Awesome Publication",
+    #       "description": "My amazing publication",
+    #       "url": "https://medium.com/awesome-publication",
+    #       "imageUrl": "https://images.medium.com/somewhere.png"
+    #     }
+    #   }
+    #   ```
+    def publications()
+      response = @client.get "users/#{me['data']['id']}/publications"
+      Medium::Client.validate response
+    end
   end
 end
