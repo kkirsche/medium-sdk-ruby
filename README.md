@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/kkirsche/medium-sdk-ruby.svg)](https://travis-ci.org/kkirsche/medium-sdk-ruby) [![Code Climate](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/gpa.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby) [![Test Coverage](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/badges/coverage.svg)](https://codeclimate.com/github/kkirsche/medium-sdk-ruby/coverage)
+[![API Testing](https://img.shields.io/badge/API%20Test-RapidAPI-blue.svg)](https://rapidapi.com/package/Medium/functions?utm_source=MediumGithub&utm_medium=button&utm_content=Vender_GitHub)
 
 # Medium SDK for Ruby
 
